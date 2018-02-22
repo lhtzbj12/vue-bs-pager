@@ -14,3 +14,12 @@ vue.js是2017年最火的前端框架了，笔者在年前抽出时间好好学�
 |ext-class||扩展样式 如：pagination-lg  pagination-sm|
 |show-nearby|3|当前按钮前后按钮数|
 |info-template||默认为 '总共 {{totalCount}} 项 每页显示 {{pageSize}} 项 当前 {{pageIndex}}/{{totalPage}} 页'|
+
+# 源码中文件说明
+| 名称      |   说明 |
+| :-------- |:---------- |
+| vue-bs-pager.js | 分页组件源码 |  
+| vue-bs-pager.scss |  css源码 |  
+| index.html | 简单的使用组件的demo | 
+| complexdemo.html | 复杂的使用组件的demo | 
+其他文件略
