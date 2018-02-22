@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*!
+ * @author: lihaitao
+ * @webSite: http://blog.csdn.net/lhtzbj12/
+ * @version: v0.5
+ * @opensource:
+ * @description: 使用基于Vue和Bootstrap的分页导航组件
+ * @Revision History:
+     Date         Author               Description
+     2018-01-25   lihaitao             create
+ * @调用示例
+ <bs-pager v-bind:total-count="totalcount" v-bind:page-size="pageSize"
+  v-bind:page-index="pageIndex" v-on:page-change="pageChange"></bs-pager>
+ */
+$base-height:34px;
+$lg-height:46px;
+$sm-height:30px;
+$base-font-size:14px;
+$lg-font-size:18px;
+$sm-font-size:12px;
+$base-radius:4px;
+$lg-radius:6px;
+$lg-sm:3px;
+.bs-pager {
+  .bs-pager-info {
+    height: $base-height;
+    line-height: $base-height;
+    display: inline-block;
+    &.pagination-lg {
+      height: $lg-height;
+      line-height: $lg-height;
+      font-size: $lg-font-size;
+    }
+    &.pagination-sm {
+      height: $sm-height;
+      line-height: $sm-height;
+      font-size: $sm-font-size;
+    }
+  }
+  .pagination {
+    margin:0;
+    li {
+      input {
+        width: 60px;
+        height: $base-height;
+        line-height: $base-height;
+        text-align: center;
+        border: #ddd 1px solid;
+        border-left: none;
+        border-top-right-radius: $base-radius;
+        border-bottom-right-radius: $base-radius;
+      }
+    }
+  }
+  .pagination-lg {
+    li {
+      input {
+        height: $lg-height;
+        line-height: $lg-height;
+        font-size: $lg-font-size;
+        border-top-right-radius: $lg-radius;
+        border-bottom-right-radius: $lg-radius;
+      }
+    }
+  }
+  .pagination-sm {
+    li {
+      input {
+        height: $sm-height;
+        line-height: $sm-height;
+        font-size: $sm-font-size;
+        border-top-right-radius: $lg-sm;
+        border-bottom-right-radius: $lg-sm;
+      }
+    }
+  }
+}
